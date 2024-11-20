@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kannan's Kennel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Välkommen till Kannan's Kennel!</h1>
+        <p>Vi älskar våra fantastiska Cockerpoo- och Cavapoovalpar.</p>
+    </header>
+
+    <nav>
+        <a href="#about">Om Oss</a>
+        <a href="#gallery">Galleri</a>
+        <a href="#contact">Kontakta Oss</a>
+    </nav>
+
+    <section id="about">
+        <h2>Om Oss</h2>
+        <p>Vi är passionerade uppfödare av Cockerpoo- och Cavapoovalpar. Våra hundar är en del av familjen, och vi strävar efter att ge dem den bästa starten i livet.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Galleri</h2>
+        <div class="gallery-grid">
+            <img src="puppy1.jpg" alt="Valp 1">
+            <img src="puppy2.jpg" alt="Valp 2">
+            <img src="puppy3.jpg" alt="Valp 3">
+            <!-- Lägg till fler bilder här -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakta Oss</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kannan's Kennel | Alla rättigheter förbehållna</p>
+    </footer>
+</body>
+</html>
